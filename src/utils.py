@@ -76,8 +76,6 @@ def intersection_over_union(boxes_preds, boxes_labels, box_format="midpoint"):
 
 def non_max_suppression(bboxes, iou_threshold, threshold, box_format="corners"):
     """
-    Video explanation of this function:
-    https://youtu.be/YDkjWEN8jNA
 
     Does Non Max Suppression given bboxes
 
@@ -122,9 +120,6 @@ def mean_average_precision(
         pred_boxes, true_boxes, iou_threshold=0.5, box_format="midpoint", num_classes=20
 ):
     """
-    Video explanation of this function:
-    https://youtu.be/FppOzcDvaDI
-
     This function calculates mean average precision (mAP)
 
     Parameters:
