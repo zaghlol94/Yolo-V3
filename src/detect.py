@@ -31,7 +31,7 @@ scaled_anchors = (
         * torch.tensor(config.S).unsqueeze(1).unsqueeze(1).repeat(1, 3, 2)
 ).to(config.DEVICE)
 
-image = Image.open("test.jpg").convert("RGB")
+image = Image.open(args.image_path).convert("RGB")
 image = transform(image).unsqueeze(0)
 model.eval()
 
